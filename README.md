@@ -51,7 +51,7 @@ Sigue estos pasos para poner en marcha el proyecto:
 -   **Obtener todos los usuarios (GET /usuarios)**:
 
     ```bash
-    GET http://localhost:3000/usuarios 
+    GET http://localhost:5000/usuarios 
     ```
 
 -   **Actualizar un usuario por ID (PUT /usuarios/:id)**:
@@ -67,7 +67,7 @@ Sigue estos pasos para poner en marcha el proyecto:
 -   **Eliminar un usuario por ID (DELETE /usuarios/:id)**:
 
     ```bash
-    DELETE http://localhost:3000/usuarios/:id ️
+    DELETE http://localhost:5000/usuarios/:id ️
     ```
 
 ###  Productos
@@ -85,7 +85,7 @@ Sigue estos pasos para poner en marcha el proyecto:
 -   **Obtener todos los productos (GET /productos)**:
 
     ```bash
-    GET http://localhost:3000/productos 
+    GET http://localhost:5000/productos 
     ```
 
 -   **Actualizar un producto por ID (PUT /productos/:id)**:
@@ -101,7 +101,7 @@ Sigue estos pasos para poner en marcha el proyecto:
 -   **Eliminar un producto por ID (DELETE /productos/:id)**:
 
     ```bash
-    DELETE http://localhost:3000/productos/:id ️
+    DELETE http://localhost:5000/productos/:id ️
     ```
 
 ###  Contadores y Operaciones
@@ -109,11 +109,11 @@ Sigue estos pasos para poner en marcha el proyecto:
 -   **Obtener el número de usuarios y productos (GET /contadores)**:
 
     ```bash
-    GET http://localhost:3000/contadores 
+    GET http://localhost:5000/contadores 
     ```
 
 -   **Obtener el número total de operaciones realizadas (GET /operaciones)**:
 
     ```bash
-    GET http://localhost:3000/operaciones 
+    GET http://localhost:5000/operaciones 
     ```
