@@ -13,7 +13,7 @@ exports.crearUsuario = async (req, res) => {
 exports.obtenerUsuarios = async (req, res) => {
     try {
         const usuarios = await Usuario.find();
-        res.json(usuarios);
+        res.json(usuarios); 
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
@@ -30,8 +30,11 @@ exports.actualizarUsuario = async (req, res) => {
 
 exports.eliminarUsuario = async (req, res) => {
     try {
-        await Usuario.findByIdAndDelete(req.params.id);
-        res.status(204).send();
+        const usuario = await Usuario.findByIdAndDelete(req.params.id);
+        if (!usuario) {
+            return res.status(404).json({ error: 'Usuario no encontrado' });
+        }
+        res.status(200).json({ message: 'Usuario eliminado correctamente' }); 
     } catch (error) {
         res.status(400).json({ error: error.message });
     }
